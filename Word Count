@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::cout << "~~~~~\"Length Checker\"~~~~~" << std::endl;
+    std::string x;
+    std::cout << "INPUT TEXT= ";
+    std::getline(std::cin, x);
+    std::cout << "Word Count= " << x.length() << std::endl;
+ 
+    return 0;
+}
+
