@@ -1,0 +1,35 @@
+#include<iostream>
+
+int main(){
+    int x,y;
+    char z;
+    std::cout << "Enter Number 1: ";
+    std::cin >> x;
+    std::cout << "\nEnter Number 2: ";
+    std::cin >> y;
+    std::cout << "\nWhat Do You Want To Do: ";
+    std::cin >> z;
+    if(z >= '0' && z <= '9'){
+        std::cout << "\nEnter Correct Operation!";
+    }
+    else{
+        switch (z){
+            case '+' :
+                std::cout << x+y;
+                break;
+            case '-' :
+                std::cout << x-y;
+                break;
+            case '*' :
+                std::cout << x*y;
+                break;    
+            case '/' :
+                std::cout << x/y;
+                break;
+            default:
+                std::cout << "\nEnter (+,-,*,/) only!";            
+        }
+    }
+    return 0;
+}
+
